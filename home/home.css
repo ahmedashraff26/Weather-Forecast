@@ -207,6 +207,24 @@ body{
   animation-delay: -0.5s;
 }
 
+.gradient-button {
+    background: linear-gradient(45deg, #61c2ff, #d900ff); /* Gradient colors */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    padding: 10px 20px; /* Padding */
+    text-align: center; /* Center text */
+    text-decoration: none; /* Remove underline */
+    display: inline-block; /* Inline block element */
+    font-size: 16px; /* Font size */
+    margin: 4px 2px; /* Margin */
+    cursor: pointer; /* Pointer cursor */
+    border-radius: 5px; /* Rounded corners */
+    transition: 0.3s ease; /* Smooth background transition */
+}
+
+.gradient-button:hover {
+    background: linear-gradient(45deg, #d900ff, #61c2ff); /* Inverse gradient on hover */
+}
 
 
 

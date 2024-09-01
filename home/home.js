@@ -12,6 +12,7 @@ let currentDayNum = document.querySelector('#currentDay');
 let forecastDay = Array.from(document.querySelectorAll('.forecastDay'));
 let contactClick = document.querySelector('.contactClick');
 let currentMonth = document.querySelector('#currentMonth');
+let getLocationWeatherBtn = document.querySelector('#getLocationWeatherBtn');
 
 // get current day
 let currentDate = new Date();
@@ -28,18 +29,23 @@ console.log(currentMonthName);
 // let currentDayName = daysOfWeek[currentDay];
 
 
-if(navigator.geolocation.getCurrentPosition(function(pos){
+getLocationWeatherBtn.addEventListener('click', function () {
+   if(navigator.geolocation.getCurrentPosition(function(pos){
    console.log(pos);
    const lat = pos.coords.latitude;
    const long = pos.coords.longitude;
-   getCurrentWeather(`${lat}, ${long}`)
+   localStorage.setItem('lat', lat);
+   localStorage.setItem('long', long);
+   getCurrentWeather(`${lat}, ${long}`);
 })){
    console.log('weather');
 }
+})
+
 
 contactClick.addEventListener('click', function(){
    console.log('contact');
-   window.location.href = "../contact/contact.html";
+   window.location.href = "./contact/contact.html";
 })
 
 // getCurrentWeather('cairo');
