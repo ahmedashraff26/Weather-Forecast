@@ -15,7 +15,7 @@
 <body>
     <div class="site-content">
         <div class="site-header py-3">
-            <div class="container py-3 px-5">
+            <div class="container py-3 px-md-5">
                 <nav class="navbar navbar-expand-lg">
                     <div class="container-fluid">
                         <a class="navbar-brand d-flex" href="#">
@@ -33,7 +33,7 @@
                         </button>
                         <div class="collapse navbar-collapse mt-4 text-center rounded-2" id="navbarNavAltMarkup">
                             <div class="navbar-nav ms-auto pe-4 d-flex column-gap-5">
-                                <a class="nav-link active py-1 text-white" aria-current="page" href="#">Home</a>
+                                <a class="nav-link py-1 text-white link-clicked" aria-current="page" href="#">Home</a>
                                 <a class="nav-link py-1 text-white" href="#">News</a>
                                 <a class="nav-link py-1 text-white" href="#">Live cameras</a>
                                 <a class="nav-link py-1 text-white" href="#">Photos</a>
@@ -48,16 +48,16 @@
         <div class="hero d-flex flex-column align-items-center">
             <div class="container px-3">
                 <form class="search-location">
-                    <input class="search-box w-100" type="text" placeholder="Which location's weather do you want to know about?" id="search">
+                    <input class="search-box w-100" type="text" placeholder="Enter the location..." id="search">
                     <input class="find-btn px-5 text-white" type="button" value="Find" id="submit">
                 </form>
             </div>
-            <button id="getLocationWeatherBtn" class="gradient-button btn btn-info w-25 mt-2 fw-bold rounded-5">View Weather at My Location</button>
+            <button id="getLocationWeatherBtn" class="gradient-button btn btn-info mt-2 fw-bold rounded-5">View Weather at My Location</button>
         </div>
 
         <div class="weather-table">
-            <div class="container px-5">
-                <div class="row">
+            <div class="container">
+                <div class="row px-5 px-md-0">
                     <div class="forecast col-lg-4 px-0">
                         <div class="forecast-header d-flex justify-content-between px-3">
                             <span class="grey-color forecastDay"></span>
@@ -141,12 +141,12 @@
                             <input type="submit" class="subscribe-btn px-5 text-white" value="Subscribe">
                         </form>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-3 pt-3 pt-lg-1">
                         <div class="social-links">
                             <a target="_blank" href="https://facebook.com"><i class="fa-brands fa-facebook-f"></i></a>
                             <a target="_blank" href="https://x.com"><i class="fa-brands fa-twitter"></i></a>
                             <a target="_blank" href="https://youtube.com"><i class="fa-brands fa-youtube"></i></a>
-                            <a target="_blank" href="https://linkedin.com"><i class="fa-brands fa-linkedin"></i></a>
+                            <a target="_blank" href="www.linkedin.com/in/ahmed-morsy-5a2688277"><i class="fa-brands fa-linkedin"></i></a>
                         </div>
                     </div>
                 </div>

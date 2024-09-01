@@ -75,6 +75,10 @@ body{
     border: none;
 }
 
+#getLocationWeatherBtn{
+    width: 35%;
+}
+
 .find-btn{
     position: absolute;
     right: 5px;
@@ -263,17 +267,24 @@ body{
 
 
 
+@media (max-width: 992px) {
+    .navbar-collapse{
+        background-color: #323544;
+    }
+    #getLocationWeatherBtn{
+        width: 60% !important;
+    }
+}
+
 @media (max-width: 768px) {
     .weather-table .container{
         padding: 0 !important;
     }
+    #getLocationWeatherBtn{
+        width: 90% !important;
+    }
 }
 
-@media (max-width: 992px) {
-    .navbar-collapse{
-        background-color: #323544;
-    }    
-}
 
 @media (min-width:992px) and (max-width:1200px) {
     .forecast-content .degree{
