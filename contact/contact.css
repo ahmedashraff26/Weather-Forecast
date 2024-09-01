@@ -1,0 +1,166 @@
+body{
+    background-color: #1E202B;
+}
+
+.grey-color{
+    color: #BFC1C8 !important;
+}
+
+.site-header{
+    background-color: #1E202B;
+}
+
+.logo{
+    width: 64px;
+    height: 38px;
+}
+
+.logo-cap span{
+    font-size: 10px;
+    color: #bfc1c8;
+}
+
+.navbar-nav .nav-link{
+    border: transparent 2px solid !important;
+    border-radius: 30px !important;
+}
+
+.navbar-nav .link-clicked{
+    border: #009ad8 2px solid !important;
+    border-radius: 30px !important;
+    color: #009ad8 !important;
+}
+
+.navbar-nav .nav-link:hover{
+    border: #009ad8 2px solid !important;
+    border-radius: 30px !important;
+    color: #009ad8 !important;
+}
+
+.navbar-toggler{
+    color: #009ad8;
+}
+
+.navbar-toggler:hover{
+    color: #009ad8;
+}
+
+.navbar-toggler .fa-bars{
+    background: none;
+    border: 2px solid transparent;
+    color: white;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+
+.box{
+    background-color: #262936;
+}
+
+.box a::after{
+    content: " ";
+    display: inline-block;
+    vertical-align: middle;
+    width: 12px;
+    height: 7px;
+    background: url(../images/arrow-gray.png) no-repeat;
+    margin: 0 10px;
+}
+
+.map{
+    background: #262936;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.map-page{
+    height: 300px;
+    width: 100%;
+}
+
+.contact-form input{
+    margin-bottom: 10px;
+    color: white;
+    border: 2px solid #393c48;
+    background: transparent;
+}
+
+.contact-form input:hover{
+    border-color: #009ad8;
+}
+
+.contact-form textarea{
+    min-height: 150px;
+    width: 100%;
+    margin-bottom: 10px;
+    color: white;
+    border: 2px solid #393c48;
+    background: transparent;
+}
+
+.contact-form textarea:hover{
+    border-color: #009ad8;
+}
+
+.site-footer{
+    background-color: #262936;
+}
+
+
+.subscribe{
+    position: relative;
+    border: none;
+}
+
+.subscribe .subscribe-input{
+    width: 100%;
+    padding: 15px;
+    background: #1e202b;
+    color: white;
+    border-radius: 30px;
+    border: none;
+}
+
+
+.subscribe .subscribe-btn{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+    bottom: 5px;
+    border-radius: 30px;
+    border: none;
+    background: #009ad8;
+}
+
+.site-footer .social-links a{
+    width: 40px;
+    height: 40px;
+    display: inline-block;
+    border-radius: 50%;
+    background: #1e202b;
+    color: #009ad8;
+    text-align: center;
+    line-height: 2;
+    transition: 0.3s ease;
+    font-size: 20px;
+}
+
+.site-footer .social-links a:hover {
+    background: #009ad8;
+    color: white;
+}
+
+.site-footer .container p{
+    color: #bfc1c8;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.5;
+}
+
+
+@media (max-width: 992px) {
+    .navbar-collapse{
+        background-color: #323544;
+    }    
+}
